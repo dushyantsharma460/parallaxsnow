@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;    
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background,.foreground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.background{
+    transform:translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+h1{
+    position: absolute;
+    top: 5rem;
+    left: 25%;
+    /* transform: translateX(-50%); */
+    letter-spacing: 4px;
+    font-size: 10rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+.div-text{
+    background-color: skyblue;
+    padding: 50px;
+    line-height: 70px;
+    font-size: 2rem;
+}
+.div-text h2{
+    text-align: center;
+    padding: 80px;
+    font-size: 6rem;
+}
+.Ice-s{
+    width: 100%;
+    height: 80%;
+    background-image: url(./pexels-mati-mango-3193846.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 4px;
+    font-size: 10rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+.ice-climb{
+    width: 100%;
+    height: 80%;
+    background-image: url(./Ice-climbing.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 4px;
+    font-size: 10rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
